@@ -1,0 +1,424 @@
+
+  body{
+    width: 99%;
+  }
+
+  .container{
+    border: solid thin black;
+    width: 100%;
+    height: 45.0em;
+    margin: 4px 0;
+    background-color: rgb(255, 228, 0);
+  }
+
+  .container .box_1{
+    width: 50%;
+    float: left;
+    height: inherit;
+  }
+
+  .container .box_1 #div{
+    border: solid thin red;
+    width: 50%;
+    margin: -37% 31% -40%;
+    height: 0px;
+    opacity: 0;
+  }
+
+  .container .box_1 h4{
+    width: 50%;
+    margin: 40% 72%;
+    height: 0px;
+    opacity: 0;
+  }
+
+  #Welcome.hover, #div.hover{
+    animation-name: btn;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes btn {
+      0%  {opacity: 0;}
+      10%  {opacity: 0.1;}
+      20%  {opacity: 0.2;}
+      30%  {opacity: 0.3;}
+      40%  {opacity: 0.4;}
+      50% {opacity: 0.5;}
+      60%  {opacity: 0.6;}
+      70%  {opacity: 0.7;}
+      80%  {opacity: 0.8;}
+      90%  {opacity: 0.9;}
+      100% {opacity: 1;}
+  }
+
+  .container .box_1:hover{
+        animation-name: myanimation;
+        animation-duration: 2s;
+        animation-timing-function: step-start;
+        animation-fill-mode: both;
+      }
+
+          @keyframes myanimation {
+
+            0%{
+              transform: scale3d(0%, 0%, 0%);
+            }
+            100%{
+              transform: scale3d(110%, 110%, 50%);
+            }
+
+          }
+
+     .box_2:hover{
+       animation-name: myanimation;
+       animation-timing-function: step-start;
+       animation-fill-mode: both;
+     }
+
+         @keyframes myanimation {
+
+           0%{
+             transform: scale3d(0%, 0%, 0%);
+           }
+           100%{
+             transform: scale3d(101%, 100%, 2%);
+           }
+
+         }
+
+  .container .box_2{
+    background: url(../assets/images/ross-sokolovski.jpg);
+    background-position: center;
+    width: 50%;
+    float: right;
+    height: inherit;
+  }
+
+  .box_1 h1{
+    margin: 40% 46%;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-family: fantasy;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 260%;
+    line-height: 60px;
+  }
+
+  .box_1 h3{
+    margin: -44% 44%;
+    color: red;
+    text-transform: capitalize;
+    font-style: oblique;
+    font-family: fantasy, sans-serif;
+    width: inherit;
+    letter-spacing: 3px;
+    font-weight: 500;
+    line-height: 60px;
+  }
+
+  .box_1 img{
+    height: 30px;
+    width: 50px;
+    margin: 34% 39%;
+  }
+
+
+
+
+  #sidebar ul li {
+    color: rgba(230, 230, 230, 0.9);
+    list-style: none;
+    padding: 1em 10em;
+    border-bottom: 0.2em solid rgba(100,100,100,0.5);
+    text-align: center;
+    margin: 0 auto 0.5em 0;
+ }
+
+   #sidebar .toggle-btn{
+     position:absolute;
+     left: 100%;
+     top:20.7px;
+     height: 13px;
+     width: 40.5px;
+     cursor: pointer;
+ }
+
+   #sidebar .toggle-btn span {
+     display: block;
+     width:20px;
+     height: 1px;
+     background: #1e1f1f;
+     margin: 3.8px 20px;
+ }
+
+   #sidebar{
+     position:absolute;
+     width:57%;
+     background: rgb(0, 0, 17);
+     left: -57%;
+     height: 100%;
+     top:1.1%;
+     transition: all 1100ms linear;
+ }
+
+   #sidebar.active{
+     left: -5%;
+ }
+
+   #sidebar ul li a, #sidebar ul li button{
+     color: white;
+     text-decoration:none;
+     border: none;
+     background: none;
+     text-transform: Uppercase;
+     font-size: 105%;
+     font-family: serif;
+     cursor: pointer;
+ }
+
+  #sidebar ul li a:hover, #sidebar ul li button:hover{
+    font-size: 120%;
+  }
+
+  #sidebar ul{
+    margin: 22% 0 0 0;
+  }
+
+   #sidebar ul li a:active, #sidebar ul li button:active{
+     color: yellow;
+ }
+
+
+   #X{
+     color: white;
+     border: none;
+     background: none;
+     size: 20px;
+     margin: 30px 10%;
+     cursor: pointer;
+     font-size: 105%;
+     text-align: left;
+ }
+
+   #X:hover{
+     color: red;
+     font-weight: bold;
+ }
+
+    #X:active{
+      border:none;
+      color: red;
+    }
+
+ body.active{
+   margin-left: 52%;
+   transition: all 1100ms linear;
+ }
+
+ body{
+   transition: all 1100ms linear;
+ }
+
+ #sidebar b{
+   color: rgba(255, 255, 255, 1.0);
+   font-size: 103%;
+ }
+
+ .box_2 h1{
+   margin: 34% 16% 0;
+   width: 50%;
+   height: 40px;
+   color: rgba(255, 255, 255, 0.2);
+   cursor: context-menu;
+ }
+
+ .box_2 p{
+   padding: 0 16% 0;
+ }
+
+ #paragraph{
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .box_2 h1:hover{
+   color: rgba(255, 255, 255, 1.0);
+ }
+
+ p.active{
+   display: none;
+ }
+
+ video{
+   width: 30%;
+   height: 140px;
+   padding: 1%;
+ }
+
+ #video.video{
+   display: none;
+ }
+
+ #video.active{
+   display: all;
+   margin: 23% 12% 0 12%;
+ }
+
+ #form #Email{
+   width: 30%;
+   height: 9px;
+   outline: none;
+   padding: 10px;
+   border-radius: 6px;
+   font-style: 18px;
+ }
+
+ #form p{
+  cursor: default;
+ }
+
+ .btn{
+   cursor: pointer;
+   background-color: rgba(255, 211, 0, 0.5);
+   border-radius: 18px;
+   width: 12%;
+   height: 2.1em;
+ }
+
+ .btn-view{
+   height: 2.3em;
+   margin-left: 42%;
+   padding-left: 2%;
+   width: 17%;
+ }
+
+ .btn:hover{
+   background-color: rgba(0, 195, 0, 0.3);
+ }
+
+ #form{
+   position: relative;
+   text-align: center;
+   font-weight: 900;
+   color: rgba(255, 255, 255, 0.3);
+   font-size: 130%;
+   margin-left: -40px;
+   margin-top: 37%;
+ }
+
+ #Email{
+   margin-bottom: 10px;
+ }
+
+ #form.form{
+   display: none;
+ }
+
+ #form.active{
+   display: all;
+ }
+
+ #footer{
+    color: rgba(255, 255, 255, 0.4);
+    margin: 21% 0% 0 35%;
+    text-transform: uppercase;
+ }
+
+
+   @media only screen and (max-width: 994px) and (min-width: 700px) {
+     .container .box_1{
+       width: 100%;
+       height: 4em;
+     }
+
+     .container .box_2{
+       width: 100%;
+       height: 100%;
+       //background: url(../assets/images/veeterzy.jpg);
+     }
+   }
+
+/*
+ @media only screen and (max-width: 1494px) and (min-width: 1400px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 33% 39%;
+   }
+ }
+
+ @media only screen and (max-width: 1399px) and (min-width: 1342px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 32.7% 39%;
+   }
+ }
+
+ @media only screen and (max-width: 1341px) and (min-width: 1270px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 31.1% 37%;
+   }
+ }
+
+ @media only screen and (max-width: 1269px) and (min-width: 1242px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 31.2% 37%;
+   }
+ }
+
+ @media only screen and (max-width: 1241px) and (min-width: 1131px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 30.1% 37%;
+   }
+ }
+
+ @media only screen and (max-width: 1130px) and (min-width: 1099px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 29.2% 37%;
+   }
+ }
+
+ @media only screen and (max-width: 1099px) and (min-width: 1082px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 28.8% 37%;
+   }
+ }
+
+ @media only screen and (max-width: 1081px) and (min-width: 1046px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 27.8% 36%;
+   }
+ }
+
+ @media only screen and (max-width: 1045px) and (min-width: 1015px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 27.2% 36%;
+   }
+ }
+
+ @media only screen and (max-width: 1014px) and (min-width: 915px) {
+   .box_1 img{
+     height: 30px;
+     width: 50px;
+     margin: 27.0% 36%;
+   }
+ }
+*/
